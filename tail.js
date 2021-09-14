@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 const tail = function(arr) {
   if (arr.length === 0 || arr.length === 1) {
-    return [];
+    return undefined;
   } else {
     return arr.slice(1, arr.length);
   }
@@ -17,10 +17,10 @@ const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]);
 
 const result1 = tail(["Hello"]);
-assertEqual(result1, []);
+assertEqual(result1, undefined);
 
 const result2 = tail([]);
-assertEqual(result2, []);
+assertEqual(result2, undefined);
 
 // Test Case: Check the original array 
 const words = ["Yo Yo", "Lighthouse", "Labs"];

@@ -1,3 +1,4 @@
+//https://www.npmjs.com/package/@meghal.shah210/lotide
 const head   = require('./head');
 const tail   = require('./tail');
 const middle = require('./middle');
